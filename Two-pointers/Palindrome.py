@@ -25,6 +25,10 @@ No, if either of these conditions is fulfilled:
 """
 
 '''
+Time complexity: O(N)
+Run (n/2) times because of two pointers
+Constant space complexity: O(1)
+
 Problem 1:
 
 Note: A palindrome is a word, phrase, or sequence of characters that reads the same backward as forward.
@@ -57,13 +61,16 @@ def is_palindrome(s: str) -> bool:
     return True
 
 
-# Test the function
-string = "A man, a plan, a canal, Panama!"
-print(is_palindrome(string))  # True
+# Driver code
+def main():
+    test_cases = ["RACECAR", "ABBA", "TART"]
+    i = 1
+    for s in test_cases:
+        print("Test Case #", i)
+        print(is_palindrome(s))
+        print("-" * 100, end="\n\n")
+        i = i + 1
 
-s = "abba"
-s2 = "kayak"
-s3 = "malayalam"
-s4 = "levis"
 
-print(is_palindrome(s4))
+if __name__ == '__main__':
+    main()
