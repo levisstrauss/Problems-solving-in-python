@@ -12,6 +12,14 @@ color are adjacent, with the colors in the order of red, white, and blue.
 Note: The function should only return the modified colors array.
 
 The time complexity here is O(N) and the space complexity is O(1).
+
+Note:
+
+    Set th fast and slow pointers to the head of the linked list.
+    Traverse the linked list by moving the slow pointer one node forward
+    and the fast pointer two nodes forward. Once the fast pointer reaches
+    the last node, the slow pointer has reached the middle of the linked list.
+
 """
 
 
